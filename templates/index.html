@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+	<title>Video Category Prediction</title>
+	<style>
+    	/* Style the navigation bar */
+		nav {
+			background-color: #333;
+			overflow: hidden;
+		}
+
+		/* Style the links inside the navigation bar */
+		nav a {
+			float: right;
+			margin-right: 10px;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/* Change the color of links on hover */
+		nav a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Style the active link */
+		nav .active {
+			background-color: #4CAF50;
+			color: white;
+			
+		}
+		/* Style the body of the page with a grey background */
+		body {
+			background-color: #34495E;
+			font-family: Arial, sans-serif;
+		}
+		
+		/* Center the h1 element */
+		h1 {
+			text-align: center;
+			color: white;
+			font-size: 4rem;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			text-shadow: 2px 2px 2px black;
+			margin-top: 10vh;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 5vh;
+		}
+
+		label {
+			color: rgb(58, 236, 9);
+			font-size: 1.2rem;
+			margin-top: 2vh;
+		
+		}
+
+		textarea {
+			margin-top: 1vh;
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: none;
+			resize: none;
+			font-size: 1rem;
+		}
+
+		input[type="submit"] {
+			margin-top: 2vh;
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: none;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 1.2rem;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #2E8B57;
+		}
+		
+		h3{
+          background-color: #333;
+          border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          color: #4caf50;
+          font-size: 15px;
+          margin-top: 55px;
+          margin-left: -10px;
+          padding: 10px;
+          padding-left: 500px; 
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          
+          right: -500px;
+          left: 500;
+          
+        }
+        h4{
+        margin-top:15px;
+        margin-left: 500px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .form-wrapper {
+	background-image: url('static/robots.jpg');
+	
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 30vw;
+	margin-left: 200px;
+}
+
+	</style>
+</head>
+
+</head>
+<body>
+<!-- Add header -->
+  <div class="header">
+  <span></span>
+</div>
+  <!-- ... -->
+    <!-- Navigation bar -->
+	<nav>
+		<a class="active" href="#">Predict</a>
+		<a href="/">Home</a>
+	</nav>
+	<!-- End of navigation bar -->
+	<h1>Video Category Prediction</h1>
+	<div class="form-wrapper">
+	<form action="/predict" method="post">
+		<label for="description">Kindly Provide the Description of your Advertisement:</label><br>
+		<textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+		<input type="submit" value="Predict Category">
+	</form>
+</div>
+
+	<h3> Contact us: 9999899998    |    Email: yd@gmail.com   </h3>
+	<h4> Created by: sandeepkumarnalubola | Copyright: @ydcom.com </h4>
+</body>
+</html>
